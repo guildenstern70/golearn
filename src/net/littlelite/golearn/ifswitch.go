@@ -1,8 +1,8 @@
-package src
+package golearn
 
 import "fmt"
 
-func test() bool {
+func Test() bool {
 
 	a := 30
 

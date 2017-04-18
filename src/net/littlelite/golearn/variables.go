@@ -1,4 +1,4 @@
-package src
+package golearn
 
 import (
 	"fmt"
@@ -12,8 +12,6 @@ var (
 	topdesc       string  = "Planet"
 	topradius     int32   = 6378
 	topmass       float64 = 5.972E+24
-	topactive     bool    = true
-	topsatellites []string
 )
 
 // Typed variables
@@ -30,14 +28,17 @@ var autostring = "Prova"
 var autonumber = 0.0
 
 // Short
-func onlyInFunction() {
+func OnlyInFunction() {
 
 	shortname := "Neptune"
 	desc := "Planet"
-	radius := 24764
+	radius := int32(24764)
 	mass := 1.024e26
 
-	fmt.Print(shortname, desc, radius, mass)
+	fmt.Println("")
+	fmt.Println("== VARIABLES ==")
+	PrintPlanet(topname, topdesc, topradius, topmass)
+	PrintPlanet(shortname, desc, radius, mass)
 
 }
 
