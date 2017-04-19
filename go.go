@@ -2,12 +2,12 @@ package main
 
 import (
 	"fmt"
-	"net/littlelite/golearn"
+	"github.com/guildenstern70/golearn/core"
 )
 
 const VERSION = "0.1"
 
 func main() {
 	fmt.Printf("GoLearn v.%s", VERSION)
-	golearn.OnlyInFunction()
+	core.OnlyInFunction()
 }
