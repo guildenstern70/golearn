@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/guildenstern70/golearn/core"
+	"github.com/guildenstern70/GoLearn/core"
 )
 
 const VERSION = "0.1"
@@ -14,4 +14,5 @@ func main() {
 	core.Arrays()
 	core.Slices()
 	core.Structs()
+	core.Pointers()
 }
