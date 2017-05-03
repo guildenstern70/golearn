@@ -16,4 +16,6 @@ func main() {
 	core.Slices()
 	core.Structs()
 	core.Pointers()
+	core.Triangles()
+	core.Strings()
 }
