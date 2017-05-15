@@ -18,4 +18,5 @@ func main() {
 	core.Pointers()
 	core.Triangles()
 	core.Strings()
+	core.Interfaces()
 }

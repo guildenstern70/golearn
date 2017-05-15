@@ -16,7 +16,9 @@ var q4 = months[9:]
 
 func Slices() {
 	// Make and add
+	// Make 10 empty strings
 	var somestrings = make([]string, 10)
+	// Append 11th string
 	somestrings = append(somestrings, "XXX")
 
 	fmt.Println(len(months), cap(months))
