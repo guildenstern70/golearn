@@ -9,6 +9,10 @@ func ForLoops() {
 		fmt.Println(x)
 	}
 
+	for y:=uint32(0); y < 100; y++ {
+		fmt.Println(y)
+	}
+
 	// Iterator
 	var fruits [3]string = [3]string{ "Apple", "Banana", "Kiwi" }
 	for f := range fruits {
