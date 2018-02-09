@@ -14,7 +14,7 @@ func ForLoops() {
 	}
 
 	// Iterator
-	var fruits [3]string = [3]string{ "Apple", "Banana", "Kiwi" }
+	var fruits = [3]string{ "Apple", "Banana", "Kiwi" }
 	for f := range fruits {
 		fmt.Println(fruits[f])
 	}
