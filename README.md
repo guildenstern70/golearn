@@ -1,5 +1,7 @@
 # GOLEARN PROJECT
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/guildenstern70/golearn](https://goreportcard.com/report/github.com/guildenstern70/golearn)
+
 ### Setup
 
 You should have a single workspace repository for all of your GO 
