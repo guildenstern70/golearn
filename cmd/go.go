@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/guildenstern70/GoLearn/core"
+	"github.com/guildenstern70/golearn/core"
 )
 
-const VERSION = "0.1"
+const VERSION = "0.2"
 
 func main() {
 	fmt.Printf("GoLearn v.%s", VERSION)
