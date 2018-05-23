@@ -2,14 +2,13 @@ package core
 
 import "fmt"
 
-
 type currency struct {
 	name, country string
 }
 
 type price struct {
 	value int
-	cur currency
+	cur   currency
 }
 
 type car struct {
@@ -17,7 +16,6 @@ type car struct {
 	model string
 	price price
 }
-
 
 func Structs() {
 
@@ -32,6 +30,6 @@ func Structs() {
 	var mycar = car{
 		brand: "Fiat",
 		model: "500",
-		price:price10k}
+		price: price10k}
 	fmt.Println(mycar)
 }

@@ -5,8 +5,8 @@ import (
 	"strconv"
 )
 
-func multipleReturnValues( a, b int,
-			   str_a, str_b string) (string,int) {
+func multipleReturnValues(a, b int,
+	str_a, str_b string) (string, int) {
 	return str_a + str_b, a + b
 }
 

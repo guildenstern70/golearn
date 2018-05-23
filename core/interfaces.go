@@ -10,7 +10,6 @@ type shape interface {
 	perim() float64
 }
 
-
 // Any object that implements an interface "is-a"
 // object of the given interface (without need to specify it)
 // Duck typing
@@ -43,13 +42,10 @@ func shapeInfo(s shape) string {
 
 func Interfaces() {
 
-	t1 := newTriangle(10,20)
-	r1 := newRect(12,15)
+	t1 := newTriangle(10, 20)
+	r1 := newRect(12, 15)
 
 	fmt.Println(shapeInfo(t1))
 	fmt.Println(shapeInfo(r1))
 
-
 }
-
-

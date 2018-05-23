@@ -1,8 +1,8 @@
 package core
 
 import (
-	s "strings"
 	"fmt"
+	s "strings"
 )
 
 var p = fmt.Println
@@ -24,5 +24,3 @@ func Strings() {
 	p()
 
 }
-
-

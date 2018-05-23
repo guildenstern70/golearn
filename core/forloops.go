@@ -5,16 +5,16 @@ import "fmt"
 func ForLoops() {
 
 	// Classic
-	for x:=0; x < 10; x++ {
+	for x := 0; x < 10; x++ {
 		fmt.Println(x)
 	}
 
-	for y:=uint32(0); y < 100; y++ {
+	for y := uint32(0); y < 100; y++ {
 		fmt.Println(y)
 	}
 
 	// Iterator
-	var fruits = [3]string{ "Apple", "Banana", "Kiwi" }
+	var fruits = [3]string{"Apple", "Banana", "Kiwi"}
 	for f := range fruits {
 		fmt.Println(fruits[f])
 	}
@@ -27,4 +27,3 @@ func ForLoops() {
 	}
 
 }
-

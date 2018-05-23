@@ -17,5 +17,3 @@ func Pointers() {
 
 	fmt.Println(xvalPtr, xval, *xvalPtr, *usdPtr)
 }
-
-

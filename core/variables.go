@@ -8,10 +8,10 @@ import (
 
 // Top level
 var (
-	topname       string  = "Earth"
-	topdesc       string  = "Planet"
-	topradius     int32   = 6378
-	topmass       float64 = 5.972E+24
+	topname   string  = "Earth"
+	topdesc   string  = "Planet"
+	topradius int32   = 6378
+	topmass   float64 = 5.972E+24
 )
 
 // Typed variables
@@ -61,7 +61,7 @@ const (
 
 // Enumeration const
 const (
-	StarHyperGiant  = iota
+	StarHyperGiant = iota
 	StarSuperGiant
 	StarBrightGiant
 	StarGiant
