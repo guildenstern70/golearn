@@ -7,10 +7,10 @@ import (
 
 // Top level
 var (
-	topname  = "Earth"
-	topdesc  = "Planet"
-	topradius int32   = 6378
-	topmass = 5.972E+24
+	topname         = "Earth"
+	topdesc         = "Planet"
+	topradius int32 = 6378
+	topmass         = 5.972E+24
 )
 
 // Typed variables

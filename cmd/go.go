@@ -11,7 +11,6 @@ const VERSION = "0.2"
 func main() {
 	fmt.Printf("GoLearn v.%s", VERSION)
 
-
 	fmt.Println("\n== VARIABLES ==")
 	core.OnlyInFunction()
 	fmt.Println("")
