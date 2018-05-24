@@ -17,6 +17,7 @@ type car struct {
 	price price
 }
 
+// Structs shows how structs can be used
 func Structs() {
 
 	var euro = currency{

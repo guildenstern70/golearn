@@ -2,6 +2,7 @@ package core
 
 import "fmt"
 
+// Pointers shows why pointers are useful
 func Pointers() {
 
 	var xvalPtr *float64

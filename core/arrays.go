@@ -13,6 +13,8 @@ var days = [7]string{
 	"Sunday",
 }
 
+// Arrays prints out the example
 func Arrays() {
 	fmt.Println(len(val), cap(val))
+	fmt.Println(days)
 }

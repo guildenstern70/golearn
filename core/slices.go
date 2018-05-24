@@ -14,6 +14,7 @@ var q2 = halfyr[3:6]
 var q3 = months[6:9]
 var q4 = months[9:]
 
+// Slices shows how to use slices
 func Slices() {
 	// Make and add
 	// Make 10 empty strings

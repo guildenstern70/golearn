@@ -1,24 +1,23 @@
 package core
 
 import (
-	"fmt"
 	"math"
 	"time"
 )
 
 // Top level
 var (
-	topname   string  = "Earth"
-	topdesc   string  = "Planet"
+	topname  = "Earth"
+	topdesc  = "Planet"
 	topradius int32   = 6378
-	topmass   float64 = 5.972E+24
+	topmass = 5.972E+24
 )
 
 // Typed variables
-var name, desc string = "Earth", "Planet"
-var radius int32 = 6378
-var mass float64 = 5.972E+24
-var active bool = true
+var name, desc string
+var radius int32
+var mass float64
+var active bool
 var satellites = []string{
 	"Moon",
 }
@@ -27,7 +26,8 @@ var satellites = []string{
 var autostring = "Prova"
 var autonumber = 0.0
 
-// Short
+// OnlyInFunction demonstrates the shortcut of declaring a variable (with value)
+// inside a function
 func OnlyInFunction() {
 
 	shortname := "Neptune"
@@ -35,8 +35,6 @@ func OnlyInFunction() {
 	radius := int32(24764)
 	mass := 1.024e26
 
-	fmt.Println("")
-	fmt.Println("== VARIABLES ==")
 	PrintPlanet(topname, topdesc, topradius, topmass)
 	PrintPlanet(shortname, desc, radius, mass)
 

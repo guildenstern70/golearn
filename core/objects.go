@@ -28,6 +28,7 @@ func newTriangle(b, h float64) *triangle {
 	return t
 }
 
+// Triangles shows how to use a class of objects
 func Triangles() {
 
 	t1 := newTriangle(10, 20)

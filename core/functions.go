@@ -6,17 +6,18 @@ import (
 )
 
 func multipleReturnValues(a, b int,
-	str_a, str_b string) (string, int) {
-	return str_a + str_b, a + b
+	strA, strB string) (string, int) {
+	return strA + strB, a + b
 }
 
+// PrintPlanet prints out details about a planet
 func PrintPlanet(shortname string,
 	desc string,
 	radius int32,
 	mass float64) {
 
-	str_x, x := multipleReturnValues(5, 7, "5", "7")
+	strX, x := multipleReturnValues(5, 7, "5", "7")
 
-	fmt.Println(str_x + " " + strconv.Itoa(x))
+	fmt.Println(strX + " " + strconv.Itoa(x))
 	fmt.Printf("\t%s\t%s\t%d\t%f\n", shortname, desc, radius, mass)
 }

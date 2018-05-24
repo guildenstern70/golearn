@@ -7,7 +7,21 @@ var histogram = map[string]int{
 	"May": 321, "Jun": 644, "Jul": 113, "Aug": 734,
 	"Sep": 553, "Oct": 344, "Nov": 831, "Dec": 312}
 
+// Maps prints out maps examples
 func Maps() {
+
+	fmt.Println(histogram["Jan"])
+
+	// There is no functional programming in Go
+	// so you must do that the old way
+	var sum = 0
+	for _, val := range histogram {
+		if val > 100 {
+			sum += val
+		}
+	}
+	fmt.Printf("Sum of elements > 100 = %d", sum)
+
 	hist := make(map[string]int)
 	hist["Jan"] = 100
 	hist["Feb"] = 445

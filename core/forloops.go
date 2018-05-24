@@ -2,6 +2,7 @@ package core
 
 import "fmt"
 
+// ForLoops just print absurd lines out of loops
 func ForLoops() {
 
 	// Classic

@@ -40,6 +40,7 @@ func shapeInfo(s shape) string {
 	)
 }
 
+// Interfaces demonstrates the Interfaces code usage
 func Interfaces() {
 
 	t1 := newTriangle(10, 20)

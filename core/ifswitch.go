@@ -2,9 +2,8 @@ package core
 
 import "fmt"
 
-func Test() bool {
-
-	a := 30
+// IfSwitch returns the result of an improbable test
+func IfSwitch(a int) bool {
 
 	if a > 20 {
 		fmt.Println("It's greater than 20")

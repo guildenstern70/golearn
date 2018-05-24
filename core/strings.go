@@ -7,6 +7,7 @@ import (
 
 var p = fmt.Println
 
+// Strings show some strings methods
 func Strings() {
 
 	p("Contains:  ", s.Contains("test", "es"))
