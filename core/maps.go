@@ -13,7 +13,7 @@ func Maps() {
 	fmt.Println(histogram["Jan"])
 
 	// There is no functional programming in Go
-	// so you must do that the old way
+	// so you must do filtering the old way
 	var sum = 0
 	for _, val := range histogram {
 		if val > 100 {
