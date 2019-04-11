@@ -1,3 +1,9 @@
+/*
+ * Project GoLearn
+ * Copyright (c) Alessio Saltarin 2019.
+ * MIT Licence - See LICENSE
+ */
+
 package core
 
 import "fmt"

@@ -1,8 +1,16 @@
+/*
+ * Project GoLearn
+ * Copyright (c) Alessio Saltarin 2019.
+ * MIT Licence - See LICENSE
+ */
+
 package core
 
 import "fmt"
 
-var val = [100]int{44, 72, 12, 55, 64, 1, 4, 90, 13, 54}
+// Arrays are fixed-size in Go
+// Dynamic arrays are called 'slices' - see slices.go
+var val = [10]int{44, 72, 12, 55, 64, 1, 4, 90, 13, 54}
 var days = [7]string{
 	"Monday",
 	"Tuesday",
