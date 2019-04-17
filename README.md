@@ -26,10 +26,11 @@ so that you find the LICENSE file here:
  
  You build the executable file by running
  
-    go install github.com\guildenstern70\golearn\cmd
+    go install github.com/guildenstern70/golearn/cmd
  
  ### Run
  
  You run the test suite of this project by running
 
-    $GOPATH/bin/cmd.exe
+    $GOPATH/bin/cmd.exe (Windows)
+    $GOPATH/bin/cmd (Mac + Linux)
