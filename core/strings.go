@@ -1,7 +1,7 @@
 /*
  * Project GoLearn
- * Copyright (c) Alessio Saltarin 2019.
- * MIT Licence - See LICENSE
+ * Copyright (c) Alessio Saltarin 2021.
+ * Licensed under MIT Licence - See LICENSE
  */
 
 package core

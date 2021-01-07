@@ -1,13 +1,15 @@
 /*
  * Project GoLearn
- * Copyright (c) Alessio Saltarin 2019.
- * MIT Licence - See LICENSE
+ * Copyright (c) Alessio Saltarin 2021.
+ * Licensed under MIT Licence - See LICENSE
  */
 
 package core
 
 import (
+	"fmt"
 	"math"
+	"strconv"
 	"time"
 )
 
@@ -16,7 +18,7 @@ var (
 	topname         = "Earth"
 	topdesc         = "Planet"
 	topradius int32 = 6378
-	topmass         = 5.972E+24
+	topmass         = 5.972e+24
 )
 
 // Typed variables
@@ -31,6 +33,18 @@ var satellites = []string{
 // Automatic typed
 var autostring = "Prova"
 var autonumber = 0.0
+
+// PrintPlanet prints out useless details about a planet
+func PrintPlanet(shortname string,
+	desc string,
+	radius int32,
+	mass float64) {
+
+	strX, x := multipleReturnValues(5, 7, "5", "7")
+
+	fmt.Println(strX + " " + strconv.Itoa(x))
+	fmt.Printf("\t%s\t%s\t%d\t%f\n", shortname, desc, radius, mass)
+}
 
 // OnlyInFunction demonstrates the shortcut of declaring a variable (with value)
 // inside a function

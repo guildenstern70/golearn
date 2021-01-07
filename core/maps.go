@@ -1,12 +1,10 @@
 /*
  * Project GoLearn
- * Copyright (c) Alessio Saltarin 2019.
- * MIT Licence - See LICENSE
+ * Copyright (c) Alessio Saltarin 2021.
+ * Licensed under MIT Licence - See LICENSE
  */
 
 package core
-
-import "fmt"
 
 var histogram = map[string]int{
 	"Jan": 100, "Feb": 445, "Mar": 514, "Apr": 233,
@@ -14,9 +12,9 @@ var histogram = map[string]int{
 	"Sep": 553, "Oct": 344, "Nov": 831, "Dec": 312}
 
 // Maps prints out maps examples
-func Maps() {
+func Maps() int {
 
-	fmt.Println(histogram["Jan"])
+	var febValue = histogram["Feb"]
 
 	// There is no functional programming in Go
 	// so you must do filtering the old way
@@ -26,19 +24,19 @@ func Maps() {
 			sum += val
 		}
 	}
-	fmt.Printf("Sum of elements > 100 = %d", sum)
 
+	sum += febValue
+
+	// Initialize a new map
 	hist := make(map[string]int)
 	hist["Jan"] = 100
 	hist["Feb"] = 445
 	hist["Mar"] = 514
 
-	for key, val := range hist {
+	for _, val := range hist {
 		adjVal := int(float64(val) * 0.100)
-		fmt.Printf("%s (%d):", key, val)
-		for i := 0; i < adjVal; i++ {
-			fmt.Print(".")
-		}
-		fmt.Println()
+		sum += adjVal
 	}
+
+	return sum
 }

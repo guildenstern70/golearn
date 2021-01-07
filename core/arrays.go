@@ -1,12 +1,10 @@
 /*
  * Project GoLearn
- * Copyright (c) Alessio Saltarin 2019.
- * MIT Licence - See LICENSE
+ * Copyright (c) Alessio Saltarin 2021.
+ * Licensed under MIT Licence - See LICENSE
  */
 
 package core
-
-import "fmt"
 
 // Arrays are fixed-size in Go
 // Dynamic arrays are called 'slices' - see slices.go
@@ -21,8 +19,7 @@ var days = [7]string{
 	"Sunday",
 }
 
-// Arrays prints out the example
-func Arrays() {
-	fmt.Println(len(val), cap(val))
-	fmt.Println(days)
+// Arrays returns improbable sum of arrays
+func Arrays() int {
+	return len(val) + cap(val) + len(days)
 }

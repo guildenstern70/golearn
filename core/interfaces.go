@@ -1,7 +1,7 @@
 /*
  * Project GoLearn
- * Copyright (c) Alessio Saltarin 2019.
- * MIT Licence - See LICENSE
+ * Copyright (c) Alessio Saltarin 2021.
+ * Licensed under MIT Licence - See LICENSE
  */
 
 package core
@@ -47,12 +47,8 @@ func shapeInfo(s shape) string {
 }
 
 // Interfaces demonstrates the Interfaces code usage
-func Interfaces() {
-
-	t1 := newTriangle(10, 20)
-	r1 := newRect(12, 15)
-
-	fmt.Println(shapeInfo(t1))
-	fmt.Println(shapeInfo(r1))
-
+func Interfaces(a, b float64) float64 {
+	t1 := newTriangle(a, a*4)
+	r1 := newRect(b, b+4)
+	return t1.area() + r1.area()
 }

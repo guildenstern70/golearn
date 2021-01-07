@@ -1,13 +1,12 @@
 /*
  * Project GoLearn
- * Copyright (c) Alessio Saltarin 2019.
- * MIT Licence - See LICENSE
+ * Copyright (c) Alessio Saltarin 2021.
+ * Licensed under MIT Licence - See LICENSE
  */
 
 package core
 
 import (
-	"fmt"
 	"math"
 	"strconv"
 )
@@ -35,10 +34,10 @@ func newTriangle(b, h float64) *triangle {
 }
 
 // Triangles shows how to use a class of objects
-func Triangles() {
+func Objects(h, b float64) string {
 
-	t1 := newTriangle(10, 20)
+	t1 := newTriangle(b, h)
 	area := strconv.FormatFloat(t1.area(), 'f', 3, 32)
-	fmt.Println("Area of triangle with b=10 and h=20 => " + area)
+	return area
 
 }

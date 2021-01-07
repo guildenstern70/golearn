@@ -1,29 +1,25 @@
 /*
  * Project GoLearn
- * Copyright (c) Alessio Saltarin 2019.
- * MIT Licence - See LICENSE
+ * Copyright (c) Alessio Saltarin 2021.
+ * Licensed under MIT Licence - See LICENSE
  */
 
 package core
 
-import (
-	"fmt"
-	"strconv"
-)
+func singleReturnValue(a, b int) int {
+	return a + b
+}
 
 func multipleReturnValues(a, b int,
 	strA, strB string) (string, int) {
 	return strA + strB, a + b
 }
 
-// PrintPlanet prints out details about a planet
-func PrintPlanet(shortname string,
-	desc string,
-	radius int32,
-	mass float64) {
+// PrintPlanet returns crazy useless numbers
+func Functions() int {
 
-	strX, x := multipleReturnValues(5, 7, "5", "7")
+	strX, x := multipleReturnValues(5, 7, "53223ff", "7")
+	y := singleReturnValue(23, 234)
 
-	fmt.Println(strX + " " + strconv.Itoa(x))
-	fmt.Printf("\t%s\t%s\t%d\t%f\n", shortname, desc, radius, mass)
+	return len(strX) + x + y
 }

@@ -30,7 +30,14 @@ so that you find the LICENSE file here:
  
  ### Run
  
- You run the test suite of this project by running
+ Run the built assembly with
 
     $GOPATH/bin/cmd.exe (Windows)
     $GOPATH/bin/cmd (Mac + Linux)
+
+ ### Test
+ Run the test suite of this project by running
+ 
+    go test github.com/guildenstern70/golearn/core
+
+

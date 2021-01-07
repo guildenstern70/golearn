@@ -1,7 +1,7 @@
 /*
  * Project GoLearn
- * Copyright (c) Alessio Saltarin 2019.
- * MIT Licence - See LICENSE
+ * Copyright (c) Alessio Saltarin 2021.
+ * Licensed under MIT Licence - See LICENSE
  */
 
 package core
@@ -9,7 +9,7 @@ package core
 import "fmt"
 
 // Pointers shows why pointers are useful
-func Pointers() {
+func Pointers() string {
 
 	var xvalPtr *float64
 	var xval = 1500.14
@@ -22,5 +22,5 @@ func Pointers() {
 	xvalPtr = &xval
 	usdPtr = &usd
 
-	fmt.Println(xvalPtr, xval, *xvalPtr, *usdPtr)
+	return fmt.Sprintf("%f %s", *xvalPtr, *usdPtr)
 }
