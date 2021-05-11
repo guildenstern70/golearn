@@ -21,10 +21,11 @@ func ForLoops() uint32 {
 		sum += y
 	}
 
-	// Iterator
+	// Iterator (iterates over indexes)
 	var fruits = [3]string{"Apple", "Banana", "Kiwi"}
-	for f := range fruits {
-		sum += uint32(f)
+	for index, fruit := range fruits {
+		println(fruit)
+		sum += uint32(index)
 	}
 
 	// As while

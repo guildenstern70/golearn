@@ -15,7 +15,7 @@ func multipleReturnValues(a, b int,
 	return strA + strB, a + b
 }
 
-// PrintPlanet returns crazy useless numbers
+// Functions returns crazy useless numbers
 func Functions() int {
 
 	strX, x := multipleReturnValues(5, 7, "53223ff", "7")

@@ -11,7 +11,11 @@ import (
 	"strconv"
 )
 
-// Triangle object
+// Triangle object. Note that "triangle" is "private" because it's written in lowercase.
+// To use it as a library type, the name must be exported, that is written in Title case,
+// ie: Triangle.
+// Even the "base" and "height" attributes are "private", and can be exported using
+// Title case
 type triangle struct {
 	base   float64
 	height float64
@@ -33,7 +37,7 @@ func newTriangle(b, h float64) *triangle {
 	return t
 }
 
-// Triangles shows how to use a class of objects
+// Objects Triangles shows how to use a class of objects
 func Objects(h, b float64) string {
 
 	t1 := newTriangle(b, h)
