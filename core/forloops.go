@@ -28,6 +28,11 @@ func ForLoops() uint32 {
 		sum += uint32(index)
 	}
 
+	// Iterate over objects (ignore index)
+	for _, fruit := range fruits {
+		println(fruit)
+	}
+
 	// As while
 	var k = 1
 	for k < 10 {
