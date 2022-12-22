@@ -26,14 +26,14 @@ so that you find the LICENSE file here:
  
  You build the executable file by running
  
-    go install github.com/guildenstern70/golearn/cmd
+    go install github.com/guildenstern70/golearn/golearn
  
  ### Run
  
  Run the built assembly with
 
-    $GOPATH/bin/cmd.exe (Windows)
-    $GOPATH/bin/cmd (Mac + Linux)
+    $GOPATH/bin/golearn.exe (Windows)
+    $GOPATH/bin/golearn (Mac + Linux)
 
  ### Test
  Run the test suite of this project by running

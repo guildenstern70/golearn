@@ -1,6 +1,6 @@
 /*
  * Project GoLearn
- * Copyright (c) Alessio Saltarin 2021.
+ * Copyright (c) Alessio Saltarin 2021-22
  * Licensed under MIT Licence - See LICENSE
  */
 
@@ -11,7 +11,7 @@ import (
 )
 
 // VERSION OF GO-LEARN
-const VERSION = "0.3"
+const VERSION = "0.4"
 
 func main() {
 	fmt.Printf("GoLearn v.%s\n\n", VERSION)

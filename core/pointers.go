@@ -1,6 +1,6 @@
 /*
  * Project GoLearn
- * Copyright (c) Alessio Saltarin 2021.
+ * Copyright (c) Alessio Saltarin 2021-22
  * Licensed under MIT Licence - See LICENSE
  */
 
