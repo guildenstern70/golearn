@@ -26,7 +26,7 @@ so that you find the LICENSE file here:
  
  You build the executable file by running
  
-    go install github.com/guildenstern70/golearn/golearn
+    go install github.com/guildenstern70/golearn
  
  ### Run
  
