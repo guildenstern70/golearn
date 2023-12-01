@@ -6,7 +6,9 @@
 
 package core
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestObjects(t *testing.T) {
 

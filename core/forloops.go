@@ -33,6 +33,12 @@ func ForLoops() uint32 {
 		println(fruit)
 	}
 
+	// Range
+	var pairs = []int{2, 4, 6, 8, 10}
+	for i, v := range pairs {
+		println("2**%d = %d\n", i, v)
+	}
+
 	// As while
 	var k = 1
 	for k < 10 {

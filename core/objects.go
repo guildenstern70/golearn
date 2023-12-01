@@ -7,6 +7,7 @@
 package core
 
 import (
+	"fmt"
 	"math"
 	"strconv"
 )
@@ -15,7 +16,9 @@ import (
 // To use it as a library type, the name must be exported, that is written in Title case,
 // ie: Triangle.
 // Even the "base" and "height" attributes are "private", and can be exported using
-// Title case
+// Title case.
+// This class implements "Stringer", that is String() method, similar to Java toString().
+// This allows implicit string conversion.
 type triangle struct {
 	base   float64
 	height float64
@@ -28,6 +31,10 @@ func (t *triangle) area() float64 {
 func (t *triangle) perim() float64 {
 	ipotenusa := math.Sqrt((.5*t.base)*(.5*t.base) + t.height*t.height)
 	return 2*ipotenusa + t.base
+}
+
+func (t *triangle) String() string {
+	return fmt.Sprintf("Triangle with base=%v and height=%v", t.base, t.height)
 }
 
 func newTriangle(b, h float64) *triangle {

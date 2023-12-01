@@ -1,6 +1,6 @@
 /*
  * Project GoLearn
- * Copyright (c) Alessio Saltarin 2021-22
+ * Copyright (c) Alessio Saltarin 2021-23
  * Licensed under MIT Licence - See LICENSE
  */
 
@@ -14,7 +14,7 @@ import (
 const VERSION = "0.4"
 
 func main() {
-	fmt.Printf("GoLearn v.%s\n\n", VERSION)
+	fmt.Printf("\nGoLearn v.%s\n\n", VERSION)
 	fmt.Printf("Run tests with \n")
-	fmt.Printf("- go test \n\n")
+	fmt.Printf("- go test github.com/guildenstern70/golearn/core \n\n")
 }
